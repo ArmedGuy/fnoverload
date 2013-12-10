@@ -1,7 +1,7 @@
 {
   "name": "fnoverload",
   "preferGlobal": false,
-  "version": "1.0.1",
+  "version": "1.0.2",
   "author": "Johan Jatko <johan@pie-studios.com>",
   "description": "Help library for function overloading in JavaScript",
   "contributors": [

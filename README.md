@@ -1,4 +1,4 @@
-# Overload - Function overloading for JavaScript
+# fnoverload - Function overloading for JavaScript
 There are several libraries out there that can do function overloading, but none have had an innocent enough syntax for me.
 I hope that others will find my version easy to use.
 
@@ -6,7 +6,7 @@ I hope that others will find my version easy to use.
 
 
 ```javascript
-var _o = require('overload');
+var _o = require('fnoverload');
 
 
 // Simple argument-count overloading
