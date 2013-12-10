@@ -1,5 +1,5 @@
-# Overload.js - Function overloading for JavaScript
-There are several libraries out there that can do function overloading, but none have had an innocent enough syntax.
+# Overload - Function overloading for JavaScript
+There are several libraries out there that can do function overloading, but none have had an innocent enough syntax for me.
 I hope that others will find my version easy to use.
 
 ### How to use:
@@ -27,12 +27,12 @@ var func1 = _o([
 // More advanced, type-based overloading
 var func2 = _o([
 
-	_o.function("string", // expect string 
+	_o.function(String, // expect string 
 	function(str) {
 		console.log("String: " + str);
 	}),
 	
-	_o.f("string", "number", // expect string and a number, botn function and f works
+	_o.f(String, Number, // expect string and a number, botn function and f works
 	function(str, num) {
 		console.log("String is: " + str + ", num is: " + num);
 	})
