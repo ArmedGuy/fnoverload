@@ -24,7 +24,7 @@ function overload(fns) {
 		throw new Error("No matching overload found!");
 	}
 }
-exports.f = function() {
+exports.function = exports.f = function() {
 	var argv = Array.prototype.slice.call(arguments);
 	if(argv.length == 0) {
 		throw new Error("Missing callback function in parameter list!");

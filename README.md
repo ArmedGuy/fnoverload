@@ -27,12 +27,12 @@ var func1 = _o([
 // More advanced, type-based overloading
 var func2 = _o([
 
-	_o.f("string", // expect string 
+	_o.function("string", // expect string 
 	function(str) {
 		console.log("String: " + str);
 	}),
 	
-	_o.f("string", "number", // expect string and a number
+	_o.f("string", "number", // expect string and a number, botn function and f works
 	function(str, num) {
 		console.log("String is: " + str + ", num is: " + num);
 	})
