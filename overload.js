@@ -38,7 +38,7 @@ function overload(fns) {
 			}
 		}
 		for(i in functions) {
-			if(functions[i].length == argc && w._expectsInstance.length == 0) {
+			if(functions[i].length == argc && functions[i]._expectsInstance.length == 0) {
 				return functions[i].apply(this, argv);
 			}
 		}
