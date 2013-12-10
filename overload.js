@@ -27,7 +27,6 @@ function overload(fns) {
 			if(functions[i]._expectsInstance.length == argv.length) {
 				match = true;
 				for(a in argv) {
-					console.log(argv[a]);
 					if(!isMatch(argv[a], functions[i]._expectsInstance[a])) {
 						match = false;
 						break;
@@ -55,6 +54,7 @@ exports.function = exports.f = function() {
 	var w = function() {
 		fn.apply(this, arguments);
 	};
+	w._expectsInstance = [];
 	for(i in args) {
 		w._expectsInstance.push(args[i]);
 	}
