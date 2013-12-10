@@ -1,0 +1,26 @@
+{
+  "name": "overload",
+  "preferGlobal": false,
+  "version": "1.0.0",
+  "author": "Johan Jatko <johan@pie-studios.com>",
+  "description": "Help library for function overloading in JavaScript",
+  "contributors": [
+    {
+      "name": "Johan Jatko",
+      "email": "johan@pie-studios.com"
+    }
+  ],
+  "main": "./overload",
+  "keywords": [
+    "method",
+    "function",
+    "overloading",
+    "overload",
+    "arguments",
+	"help"
+  ],
+  "licence": "MIT",
+  "engines": {
+    "node": ">=0.8"
+  }
+}
