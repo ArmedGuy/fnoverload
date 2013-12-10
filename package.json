@@ -1,5 +1,5 @@
 {
-  "name": "overload",
+  "name": "fnoverload",
   "preferGlobal": false,
   "version": "1.0.0",
   "author": "Johan Jatko <johan@pie-studios.com>",
@@ -17,7 +17,8 @@
     "overloading",
     "overload",
     "arguments",
-	"help"
+	"help",
+	"multimethod"
   ],
   "licence": "MIT",
   "engines": {
