@@ -12,11 +12,19 @@ function isMatch(obj1, obj2) {
 	}
 	return false;
 }
-function overload(fns) {
+function overload() {
 	var functions = [];
 	
-	for(i in fns) {
-		functions.push(fns[i]);
+	var advOl = false;
+	for(i in arguments) {
+		if((!arguments[i] instanceof Function)) {
+			advOl = true;
+		}
+		functions.push(arguments[i]);
+	}
+	if(advOl) {
+		functions = [];
+		exports.f.apply(this, arguments);
 	}
 	return function() {
 		var argc = arguments.length
