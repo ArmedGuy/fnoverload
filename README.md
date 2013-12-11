@@ -2,6 +2,9 @@
 There are several libraries out there that can do function overloading, but none have had an innocent enough syntax for me.
 I hope that others will find my version easy to use.
 
+Please remember that unlike true overloading, this is psuedo-overloading that is performed in runtime.
+I have not benchmarked it in any way
+
 ### How to use:
 
 
@@ -27,16 +30,21 @@ var func1 = o(
 // More advanced, type-based overloading
 var func2 = o(
 
-	o.function(String, // expect string 
+	// expects string
+	o.function(String,
 	function(str) {
 		console.log("String: " + str);
 	}),
 	
-	o.f(String, Number, // expect string and a number, both "o.function" and "o.f" works
+	// expect string and a number, both "o.function" and "o.f" works
+	o.f(String, Number, 
 	function(str, num) {
 		console.log("String is: " + str + ", num is: " + num);
 	}),
-	o(String, Boolean, // expects string and bool, as you see here even just "o" works as well(BUT only when not all parameters are functions)
+	
+	// expects string and bool, even just "o" works as well*
+	// * BUT only when not all parameters are functions
+	o(String, Boolean,
 	function(str, b) {
 		console.log("String is: " + str + ", bool is: " + b);
 	})
@@ -56,3 +64,5 @@ func2("Hello", true);
 // outputs: String is: Hello, bool is: true
 
 ```
+
+Both methods(simple and advanced) can be mixed in an var func = o(...) statement, but type-based functions will be chosen before argument-count
