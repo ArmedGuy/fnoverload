@@ -20,7 +20,7 @@ assert.equal(f1("derp", "herp"), 2, "two parameters should return 2");
 
 
 var f2 = o(
-	o(String, http.Server,
+	o.f(String, http.Server,
 	function(str, server) {
 		return 1;
 	})
