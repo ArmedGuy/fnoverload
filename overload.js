@@ -9,7 +9,7 @@
 		if ((typeof obj1 === 'undefined' && obj1 === obj2)
 			|| ((typeof obj1).match(/boolean|function|string|number/) && obj1.constructor === obj2)
 			|| (typeof obj2 === 'function' && obj1 instanceof obj2 && obj2 !== Object)
-			|| (typeof obj1 === 'object' && ((obj1 === null && obj1 === obj2) || (obj1 !== null && obj1.constructor === obj2))
+			|| (typeof obj1 === 'object' && ((obj1 === null && obj1 === obj2) || (obj1 !== null && obj1.constructor === obj2) || (obj1 instanceof obj2))
 			)) {
 		  return true;
 		}
