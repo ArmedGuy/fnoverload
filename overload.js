@@ -17,17 +17,8 @@
 	}
 	function overload() {
 		var functions = [];
-		
-		var advOl = false; // advanced overloading, possible from overload itself
 		for(var i in arguments) {
-			if((!arguments[i] instanceof Function)) {
-				advOl = true;
-			}
 			functions.push(arguments[i]);
-		}
-		if(advOl) {
-			functions = [];
-			exports.f.apply(this, arguments);
 		}
 		return function() {
 			var argc = arguments.length

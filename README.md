@@ -40,13 +40,6 @@ var func2 = o(
 	o.f(String, Number, 
 	function(str, num) {
 		console.log("String is: " + str + ", num is: " + num);
-	}),
-	
-	// expects string and bool, even just "o" works as well*
-	// * BUT only when not all parameters are functions
-	o(String, Boolean,
-	function(str, b) {
-		console.log("String is: " + str + ", bool is: " + b);
 	})
 );
 
@@ -59,9 +52,6 @@ func1("hi", "hello");
 
 func2("hi mate", 3);
 // outputs: String is: hi mate, num is: 3
-
-func2("Hello", true);
-// outputs: String is: Hello, bool is: true
 
 ```
 
