@@ -34,8 +34,9 @@
 							break;
 						}
 					}
-					if(true === match)
+					if(true === match) {
 						return functions[i].apply(this, argv);
+					}
 				}
 			}
 			for(i in functions) {
@@ -59,7 +60,7 @@
 		}
 		var fn = args.pop();
 		var w = function() {
-			fn.apply(this, arguments);
+			return fn.apply(this, arguments);
 		};
 		w._expectsArguments = [];
 		for(var i in args) {

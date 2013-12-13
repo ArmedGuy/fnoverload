@@ -18,7 +18,6 @@ var f1 = o(
 assert.equal(f1("derp"), 1, "one parameter should return 1");
 assert.equal(f1("derp", "herp"), 2, "two parameters should return 2");
 
-
 var f2 = o(
 	o.f(String, http.Server,
 	function(str, server) {
