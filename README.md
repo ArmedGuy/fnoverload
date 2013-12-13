@@ -1,4 +1,5 @@
 # fnoverload - Function overloading for JavaScript
+[![Build Status](https://travis-ci.org/ArmedGuy/fnoverload.png?branch=master)](https://travis-ci.org/ArmedGuy/fnoverload)
 There are several libraries out there that can do function overloading, but none have had an innocent enough syntax for me.
 I hope that others will find my version easy to use.
 
